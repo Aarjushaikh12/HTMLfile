@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Obejct Types</title>
+</head>
+<body>
+    <script>
+        //A jaava is an entity having state and behaviour properties and Methods
+        //For Example Car, pen, bike etc
+        // 3 Ways to create an object
+        // 1 Object Literal
+        // 2 By creating instance of object directly
+        // 3. By using an object constructor
+        
+        //* This is the Object literal *
+        /*emp={
+            id:102,
+            Name:"Aarju",
+            Salary:20000
+        }
+        document.write(emp.id + emp.Name + emp.Salary ,"<br/>" );
+        
+        // instance of an Object
+        var emp1=new Object();
+        emp1.id=1001;
+        emp1.name="Aarju Akil Shaikh";
+        emp1.salary= 5000;
+        document.write(emp.id + "emp.name" + emp1.salary,"</br>");
+
+        //Object Constructor
+        function Emp(id, name, salary)
+        {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+            
+        }
+        e= new Emp(1003,"AARZU",60000);
+
+        document.write("My info  is " + e.id + +e.salary+ ".");*/
+
+        function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+  
+this.changeSalary=changeSalary;  
+function changeSalary(otherSalary){  
+this.salary=otherSalary;  
+}  
+}  
+e=new emp(103,"Sonu Jaiswal",30000);  
+//document.write(e.id+" "+e.name+" "+e.salary);  
+e.changeSalary(45000);  
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);
+
+
+    </script>
+
+</body>
+</html>

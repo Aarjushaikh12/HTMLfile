@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sum_oF_the_numbers</title>
+</head>
+<body>
+    <script>
+        function digitSum(num) 
+        {
+            var sum=0;
+            while(num!=0)
+            {
+            sum += num % 10;
+            num = Math.floor(num/10);
+            }
+            return sum;
+        }
+        document.write(digitSum(436725)); //27
+        document.write("<br>")
+        document.write(digitSum(5634923));//32
+    </script>
+</body>
+</html>

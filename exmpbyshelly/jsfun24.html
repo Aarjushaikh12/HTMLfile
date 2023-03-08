@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Find_largest_no.</title>
+</head>
+<body>
+    <script>
+        var arr = [2,45,3,67,89,16,24,36,96];
+        var largest = arr[0];
+        for(var i=0;i<arr.length;i++)
+        {
+            largest = arr[i]> largest ? arr[i]:largest; //check whether no is largest or not
+        }
+        document.write(largest);
+    </script>
+
+</body>
+</html>

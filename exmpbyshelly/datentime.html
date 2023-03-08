@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    Current date and time: <span id="txt"> </span>
+    Current day: <span id="txt1"> </span>
+    Current Month: <span id="txt2"> </span>
+    Current Month: <span id="txt4"> </span>
+    <script>
+        var today=new Date();
+        var day=today.getDay(1-31);
+        
+        var month=today.getMonth() + 1;
+        var year=today.getFullYear();
+
+        document.getElementById("txt").innerHTML=today;
+        document.getElementById("txt1").innerHTML=day; 
+        document.getElementById("txt2").innerHTML=month;
+        document.getElementById("txt4").innerHTML=year;   
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reverse</title>
+</head>
+<body>
+    <script>
+// var n=5;
+var rev = 0;
+var num = 123456789;
+var lastDigit;
+
+while(num != 0)
+{
+	lastDigit = num % 10;
+  rev = rev * 10 + lastDigit;
+  num = Math.floor(num/10);
+}
+
+document.write ("Reverse number : "+rev);
+
+
+
+    </script>
+</body>
+</html>

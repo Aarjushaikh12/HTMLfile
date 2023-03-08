@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>delete_from_arrar</title>
+</head>
+<body>
+    <script>
+        function deleteElement(arr,ele)
+        {
+            for(var i=0;i<arr.length;i++)
+            {
+                if(arr[i]==ele)
+                {
+                    arr.splice(i,1);  //Delete an element from an array;
+                }
+            }
+           return arr;
+        }
+
+        var arr=[21,22,56,23,56,89,85,96,56];
+        arr = deleteElement(arr,56)
+
+        document.write(arr);
+    </script>
+</body>
+</html>

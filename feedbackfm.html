@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback example</title>
+    <style>
+        marquee
+        {
+           font-size: 30px;
+           color: red;
+           font-family:Tahoma ; 
+        }
+    </style>
+</head>
+<body>
+     <marquee behvior="scroll" scrollamount="20">Faculty Feedback Form</marquee>
+     <h3>Name of The Faculty:Shreenath v</h3>
+     <form action="">
+        <label for="sname">Enter your name</label>
+        <input type="text" id="sname" name="studname"
+        placeholder="Enter your name" required>
+        <br><br>
+        <label for="em">Enter Your Email</label>
+        <input type="email" id="em" name="emfield" placeholder="Enter your valid email id" required>
+        <br><br>
+        <label for="rt">Overall rating:</label>
+        <input type="range" id="rt" name="rating" min="0" max="10">
+        <br><br>
+        <label for="cm">Give your comment here</label>
+        <textarea name="cmt" id="cm" cols="30" rows="10" maxlength="100">
+        </textarea>
+        <br><br>
+        <input type="submit" value="SUBMIT">
+        
+     </form>
+
+</body>
+</html>

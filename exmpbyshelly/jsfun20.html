@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>power_using_function</title>
+</head>
+<body>
+    <script>
+        function numPower(num,pow) {
+             var res=1; //return 1 for pow=0
+                for(var i=0;i<pow;i++){
+                res=res*num;
+              }
+                 return res;
+            }
+            document.write(numPower(4,3)); //64
+            document.write("<br>");
+            document.write(numPower(16,2)); //256
+            
+    </script>
+</body>
+</html>
