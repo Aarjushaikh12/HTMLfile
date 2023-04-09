@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #121213, #2b3442, #335d74, #2a8ba2, #20bcc4);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+}
+.container
+{
+    width: 600px;
+    height: 400px;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header
+{
+    font-size: 3rem;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+
+     background-color:rgba( 31, 38, 135, 0.37 ) ;
+}
+.container nav h2{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+     text-align: center;
+    justify-content: center;
+      font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: rgb(46, 112, 151) ;
+   
+}
+nav button
+{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+   
+   
+}
+.quote
+{
+    font-family:'Incolnsolta',monospace;
+    font-size: 32px;
+    text-align: center;
+    margin: auto 50px;
+}
+.author
+{
+    font-family: 'Lobster',cursive;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+}
+.refresh
+{
+    position: absolute;
+    bottom: 80px;
+    left:20px;
+    height: 20px;
+    cursor: pointer;
+     background-color:rgba( 31, 38, 135, 0.37 ) ;
+
+}
+.copy
+{
+    position: absolute;
+    bottom: 80px;
+    right:20px;
+    height: 30px;
+    cursor: pointer;
+    background-color:rgba( 31, 38, 135, 0.37 ) ;
+}
+footer
+{   display: flex;
+    position: absolute;
+    bottom: 5px;
+    margin: 50px;
+
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .hidden
+  {
+    display: none;
+  }
